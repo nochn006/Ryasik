@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>Изменение товара</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <p>
+            <label>Ведите название товара</label><br>
+            <input type="text" name="name" value="{{product.name}}">
+        </p>
+        <p>
+            <label>Ведите цену</label><br>
+            <input type="number" price="price" value="{{product.price}}">
+        </p>
+        <p>
+            <label>Ведите компанию</label><br>
+            <select name="company">
+
+            </select>
+        </p>
+    </form>
+
+</body>
+</html>
